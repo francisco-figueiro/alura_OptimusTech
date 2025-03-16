@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+}
+
+:root{
+    --fonte-padrao: "Inter", sans-serif;
+    --cor-de-fundo: #fff;
+    --cor-vermelho: #8E2424;
+    --cor-vermelhor-transparencia:rgba(142, 36, 36, 0.05);    
+    --cor-texto-secundario: #3A404E;
+    --cor-texto-primario: #667085;  
+    --cor-texto-terciario: #101828;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Início barra de navegação */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.links a {
+    color: var(--cor-texto-secundario);
+    margin-right: 2em;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+  
+button#signUp {
+    background-color: #8E2424;
+    color: #FFF;
+  }
+
+/* Fim barra de navegação */
+
+/* Início do Sobre nós */
+
+.cabecalho{ 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6em 15em;
+    gap: 24px;
+}
+
+.cabecalho__sobre{
+    font-weight: 600;
+    color: var(--cor-vermelho);
+}
+
+.cabecalho__titulo{
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--cor-texto-terciario);
+}
+
+.cabecalho__texto{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cor-texto-primario);
+}
+/* Fim do Sobre nós */
+
+/* Início das métricas */
+
+.metricas-container{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 0 112px 96px 112px;
+}
+
+.metricas-container__titulo{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--cor-vermelho);
+}
+
+.metricas-container__subtitulo{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-texto-terciario);
+}
+
+.metricas-container__texto{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-texto-primario);
+}
+
+/* Fim das métricas */
+
+/* Início das vagas abertas */
+
+.talentos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.talentos__titulo{
+    padding: 20px;
+}
+
+.talentos__vagas__texto{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cor-vermelho);
+    background-color: var(--cor-vermelhor-transparencia);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.talentos__titulo{
+    color: #101828;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.talentos__texto{
+    color: var(--cor-texto-primario);   
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.talentos__foto{
+    margin: 64px auto;
+}
+
+/* Fim das vagas abertas */
+
+/* Início das áreas de atuação */
+
+.faixasalarial{
+    width: 50%;
+    margin: auto;
+}
+
+.areas{
+    padding: 0 0 32px 0;
+}
+
+.areas__setor{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-texto-terciario);
+}
+
+.areas__cargo{
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 24px 24px 28px 24px;
+    margin: 24px 0; 
+    gap: 24px;  
+}
+
+.areas__especialidade{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-texto-terciario);
+
+}
+
+li{
+    list-style-type: none;
+}
+
+.areas__salario{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor-texto-primario);
+}
+
+/* Fim das áreas de atuação */
